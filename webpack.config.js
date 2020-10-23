@@ -22,5 +22,8 @@ module.exports ={
         rules:[//第三方匹配规则
             {test: /\.js|jsx$/,use:'babel-loader',exclude:/node_modules/},
         ]
+    },
+    resolve:{
+        extensions:['.js','.jsx','.json']
     }
 }
