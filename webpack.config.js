@@ -21,6 +21,7 @@ module.exports ={
     module:{//所有第三方 模块的配置规则
         rules:[//第三方匹配规则
             {test: /\.js|jsx$/,use:'babel-loader',exclude:/node_modules/},
+            {test:/\.css$/,use:['style-loader','css-loader']},//打包处理css样式表的第三方loader
         ]
     },
     resolve:{
